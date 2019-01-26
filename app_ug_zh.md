@@ -1,4 +1,7 @@
 # HttpCanary App使用手册
+
+**如果您正在使用1.x的旧版本, 请下载最新的版本v2.1.1。**
+
 ## 1. HTTPS抓包
 从Android Nougat(7.0)开始，谷歌改变了网络安全策略。自签的CA证书将默认不被HTTPS连接信任，这意味着HttpCanary将无法解析TLS/SSL数据包，即无法抓取HTTPS的明文数据。但是我们可以通过两种方式来绕过这种限制。
 
