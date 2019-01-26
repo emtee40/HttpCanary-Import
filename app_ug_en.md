@@ -1,4 +1,7 @@
 # HttpCanary App User Guide
+
+**If you are using an older version 1.x, please download the latest version v2.1.1.**
+
 ## 1. Capture HTTPS Packets
 From Android Nougat(7.0), Google changed the network security policy. Self-signed Certificate Authorities (CA) are not trusted by any apps' secure connections by default. That means HttpCanary is unable to decrypt TLS/SSL packets. But we have two ways to get around it.
 
