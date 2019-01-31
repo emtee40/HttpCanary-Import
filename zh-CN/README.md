@@ -253,7 +253,7 @@ HttpCanary提供了两种不同的注入模式，分别是静态注入和动态�
 
 ### 2. 编辑重发（Compose）
 
-如果觉得使用静态注入器太过于麻烦，可以考虑下编辑重发功能。HttpCanary提供了一个编辑器，可以编辑指定的请求，然后立即发送。
+如果觉得使用静态注入器太过于麻烦，可以考虑下编辑重发功能。HttpCanary提供了一个编辑器，可以编辑指定的请求（包括Body），然后立即发送。
 
 ![](https://github.com/MegatronKing/HttpCanary/blob/master/zh-CN/assets/screenshot29.png)
 
