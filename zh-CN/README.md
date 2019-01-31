@@ -243,19 +243,19 @@ HttpCanary提供了两种不同的注入模式，分别是静态注入和动态�
 
 你可以长按一条抓包记录来选择相应功能。
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot27.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/zh-CN/assets/screenshot27.png)
 
 ### 1. 重发（Repeat）
 
 你可以选择一个抓包记录并立即重发它。被重发的请求是通过HttpCanary发出的，但是依然可以被你配置的注入器作用。如果你想修改一个请求，可以在编辑完静态注入器后，立即重发此请求，就能看到发出的请求被安装注入器的配置修改了。所以，重发和注入器相互配合使用，可以事半功倍。
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot28.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/zh-CN/assets/screenshot28.png)
 
 ### 2. 编辑重发（Compose）
 
 如果觉得使用静态注入器太过于麻烦，可以考虑下编辑重发功能。HttpCanary提供了一个编辑器，可以编辑指定的请求，然后立即发送。
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot29.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/zh-CN/assets/screenshot29.png)
 
 标题栏右上角提供了两个选项。左边的是重置选项，一键恢复所有原始数据。右边的是提交选项，编辑完成后点击此按钮发送请求。
 
