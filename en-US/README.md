@@ -4,12 +4,13 @@ HttpCanary is a powerful capture and injection tool for the Android platform. It
 
 Before using, it is recommended to read the basic usage steps and advanced usage of HttpCanary in order to have a general understanding of the features of HttpCanary.
 
-**PS: This manual is based on the v2.1.0**
+**PS: This manual is based on the v2.2.0**
 
 ## Features
 - [x] No root requirement, will not affect network usage.
 - [x] Supports protocols like HTTP1.0, HTTP1.1, HTTP2, HTTPS and WebSocket.
 - [x] Supports modification and injection of capture data, you can intercept the packets and modify them.
+- [x] Supports repeat and compose requests.
 - [x] Supports filtering and searching for packet capture records, as well as setting the specified app and Host/IP.
 - [x] Contains Raw, Hex, Text, Header, JSON and many other viewers.
 - [x] Automatic decode data like gzip, deflate, chunked.
@@ -246,7 +247,11 @@ If a request is injected, the record item will show an indicated text.
 ## FAQ
 
 Q: What is the difference between paid version and free version?<br>
-A: The paid version has no ads, unlimited use of injections, a more perfect user experience, and more.
+A: The paid version features:
+- No ads.
+- Unlimited use of injections.
+- Support repeat and compose.
+- More powerful features in future.
 
 Q: Why are some requests not caught?<br>
 A: If you use an Android 7.0+ phone, please refer to the Getting Started of this manual. If you follow the configuration, still have the issue. I think maybe the client or the server did a security check on the SSL certificate, and in this case, the packet cannot be captured.
