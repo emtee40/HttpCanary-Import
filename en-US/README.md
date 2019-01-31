@@ -243,6 +243,33 @@ If a request is injected, the record item will show an indicated text.
 
 ![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot26.png)
 
+## Repeat and Compose
+
+From v2.2.0, HttpCanary supports repeat and compose requests.
+
+**This feature is a paid version feature, and the free version has a 7-day trial.**。
+
+You can long press the record item and choose the function.
+
+![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot27.png)
+
+### 1. Repeat
+
+You can choose an item and repeat to send it. The repeated request is from HttpCanary app, and can be injected by you injectors. So if you want to inject a request, the repeat function would be very helpful.
+
+![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot28.png)
+
+### 2. Compose
+
+Compose is an advanced repeat feature. You can edit the existing request data and then repeat it.
+
+![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot29.png)
+
+There are two menu items on ActionBar. The left one is revert, use this to revert your changes. And the right one is submit.
+
+## More
+
+More features is coming!
 
 ## FAQ
 
@@ -255,5 +282,4 @@ A: The paid version features:
 
 Q: Why are some requests not caught?<br>
 A: If you use an Android 7.0+ phone, please refer to the Getting Started of this manual. If you follow the configuration, still have the issue. I think maybe the client or the server did a security check on the SSL certificate, and in this case, the packet cannot be captured.
-
 

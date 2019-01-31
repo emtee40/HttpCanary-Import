@@ -11,6 +11,7 @@ HttpCanary是Android平台下功能最强大的抓包和注入工具，支持HTT
 - [x] 无需Root，抓包时不会影响其它App的使用。
 - [x] 支持HTTP1.0、HTTP1.1、HTTP2、HTTPS和WebSocket等协议抓包。
 - [x] 支持对抓包内容进行注入修改，支持修改请求参数、请求头、请求体、响应码、响应头和响应体等数据。
+- [ ] 支持重新发送指定请求、编辑并重新发送请求。
 - [x] 支持对抓包数据进行筛选、搜索，以及设置抓取指定应用和指定Host/IP。
 - [x] 支持Raw、Hex、Text、Header等多种视图浏览数据。
 - [x] 支持自动解码Gzip、Deflate、Chunked等编码的数据包。
@@ -186,7 +187,9 @@ HttpCanary支持以聊天的形式展示WebSocket数据。
 
 ## 注入功能
 
-HttpCanary最强大之处在于可以对数据进行注入修改，能够极大地方便开发者调试和测试接口。**此功能是付费版本功能，免费版本有7天的试用期**。
+HttpCanary最强大之处在于可以对数据进行注入修改，能够极大地方便开发者调试和测试接口。
+
+**此功能是付费版本功能，免费版本有7天的试用期**。
 
 HttpCanary提供了两种不同的注入模式，分别是静态注入和动态注入。在首页长按抓包记录，然后在弹框中选择一种注入模式。
 
@@ -232,11 +235,42 @@ HttpCanary提供了两种不同的注入模式，分别是静态注入和动态�
 
 ![](https://github.com/MegatronKing/HttpCanary/blob/master/zh-CN/assets/screenshot26.png)
 
+## 重发（Repeat）和编辑重发（Compose）
+
+从v2.2.0版本开始, HttpCanary支持重发（Repeat）和编辑重发（Compose）功能。
+
+**此功能是付费版本功能，免费版本有7天的试用期**。
+
+你可以长按一条抓包记录来选择相应功能。
+
+![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot27.png)
+
+### 1. 重发（Repeat）
+
+你可以选择一个抓包记录并立即重发它。被重发的请求是通过HttpCanary发出的，但是依然可以被你配置的注入器作用。如果你想修改一个请求，可以在编辑完静态注入器后，立即重发此请求，就能看到发出的请求被安装注入器的配置修改了。所以，重发和注入器相互配合使用，可以事半功倍。
+
+![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot28.png)
+
+### 2. 编辑重发（Compose）
+
+如果觉得使用静态注入器太过于麻烦，可以考虑下编辑重发功能。HttpCanary提供了一个编辑器，可以编辑指定的请求，然后立即发送。
+
+![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot29.png)
+
+标题栏右上角提供了两个选项。左边的是重置选项，一键恢复所有原始数据。右边的是提交选项，编辑完成后点击此按钮发送请求。
+
+## 更多
+
+更多强大的功能正在到来! 骚年，付费版来一发？
 
 ## 疑问解答
 
 问: 付费版本相比免费版本有哪些特性？<br>
-答: 付费版本无广告、无限制使用注入功能、更完美的用户体验等。
+答: 付费版本功能: 
+- 无任何广告。
+- 不限制注入功能。
+- 不限制重发和编辑重发功能。
+- 更多的即将到来的新特性。
 
 问: 怎么样获取付费版本？<br>
 答: 可以在GooglePlay直接购买，如果无法付款可以邮件guoshi.support@qq.com或者微信king20091305035联系我购买GooglePlay兑换码。
