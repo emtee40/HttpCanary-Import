@@ -5,7 +5,7 @@ HttpCanary is a powerful capture and injection tool for the Android platform. It
 # Getting Started
 
 - [Wiki](https://github.com/MegatronKing/HttpCanary/wiki)
-- [Download](https://github.com/MegatronKing/HttpCanary/wiki/Download)
+- [Downloads](https://github.com/MegatronKing/HttpCanary/wiki/Downloads)
 - [User Manual](https://github.com/MegatronKing/HttpCanary/wiki/User-Manual)
 - [NetBare](https://github.com/MegatronKing/NetBare)
 
