@@ -1,3 +1,4 @@
+## v2.6.0版本已发布！>>> Github搜索HttpCanary下载！
 
 # HttpCanary使用手册
 
