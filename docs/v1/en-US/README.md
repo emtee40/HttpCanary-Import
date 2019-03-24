@@ -4,7 +4,7 @@ HttpCanary is a powerful capture and injection tool for the Android platform. It
 
 Before using, it is recommended to read the basic usage steps and advanced usage of HttpCanary in order to have a general understanding of the features of HttpCanary.
 
-**PS: This manual is based on the v2.2.0**
+**PS: This manual is based on the v2.6.0**
 
 ## Features
 - [x] No root requirement, will not affect network usage.
