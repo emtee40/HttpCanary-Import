@@ -25,9 +25,9 @@ Before using, it is recommended to read the basic usage steps and advanced usage
 ### 1. Installation certificate
 HttpCanary uses Man-in-the-Middle (MITM) technology to capture and parse TLS/SSL packets, such as HTTPS, WSS, etc., so you need to install a self-signed Certificate Authorities (CA) before using it. Tap the capture button -> Confirm your pattern -> OK to complete the installation of the certificate.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot01.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot01.png)
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot02.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot02.png)
 
 ### 2. Android 7.0+（Optional）
 This is an **optional** step for some special cases of the Nougat(7.0)+ system. From Android Nougat(7.0), Google changed the network security policy. Self-signed Certificate Authorities (CA) are not trusted by any apps' secure connections by default. That means HttpCanary is unable to decrypt TLS/SSL packets. But we have two ways to get around it.
@@ -59,21 +59,25 @@ For more information, please see Android Developer [Network security configurati
 
 #### 2.2 Third-part app
 
-We can use [VirtualApp](https://github.com/asLody/VirtualApp) to capture the third-part app's TLS/SSL packets.
+We can use Parallel Space App to capture the third-part app's TLS/SSL packets.
 
-Go to HttpCanary Settings -> Install VirtualApp and click to install.
+Go to HttpCanary Settings -> Install Parallel Space and click to install.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot03.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot03.png)
 
-Open VirtualApp and install the target app which you want to capture. Launch the installed target app from VirtualApp and then you will see the packets hosted by VirtualApp in HttpCanary.
+Open Parallel Space App and install the target app which you want to capture. Launch the installed target app from Parallel Space App and then you will see the packets hosted by Parallel Space in HttpCanary.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot04.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot04.png)
+
+#### 2.3 Install a lower targetVersionSDK version of the target app
+
+If the app's targetVersionSDK < 24, HttpCanary can capture SSL/TLS packets even runs on Android 7.0+. 
 
 ## Running HttpCanary
 
 Tap the floating button in home page to start and stop capturing packets. Remember, long presses can quickly clear the record (A trick).
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot05.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot05.png)
 
 Capture packets are sorted by time, the list contains elements such as app icon, app name, request method, request URL, response code, and time. You can clear the list by clicking the button in ActionBar.
 
@@ -81,13 +85,13 @@ Capture packets are sorted by time, the list contains elements such as app icon,
 
 HttpCanary supports specifying capture targets, you can specify the apps or the Hosts and IPs.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot06.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot06.png)
 
 ### 2. Filter and Search
 
 Tap the 🔍 menu button in ActionBar and go to the advanced search page. You can configure multiple conditions to filter the packets.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot07.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot07.png)
 
 Tap the menu button in this page to reset all filter conditions.
 
@@ -101,21 +105,21 @@ HttpCanary provides detailed data browsing capabilities. The details page contai
 
 The overview provides packet reports including status, request protocol, request method, response code, server IP and port, cookie, Content-Type, timing, packet sizes, and more.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot08.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot08.png)
 
 Tips: Long press an item to copy it quickly.
 
 If the URL has query parameters, tap the item to go to the URL preview page:
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot09.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot09.png)
 
 Tap the Cookie item to go to the Cookie preview page:
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot10.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot10.png)
 
 Tap the Set-Cookie item to go to the Set-Cookie preview page:
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot11.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot11.png)
 
 #### 3.2 Request and Response
 
@@ -125,7 +129,7 @@ The request and response contain multiple viewers, tap the bottom tabs to switch
 
 The Raw viewer presents the original packet data, without any decoding and decrypting. The viewer contains the full packet data. You can long press and select data to copy.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot12.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot12.png)
 
 This viewer displays up to 32k of data due to character limitations.
 
@@ -133,13 +137,13 @@ This viewer displays up to 32k of data due to character limitations.
 
 The Header viewer presents request lines, request headers, response lines, and response headers. Long press an item to copy quickly.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot13.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot13.png)
 
 ##### 3.2.3 Text Viewer
 
 The Text viewer presents content data, will automatically decode data like gzip, chunked, deflate, etc.. Long press an item to copy quickly.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot14.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot14.png)
 
 This viewer displays up to 32k of data due to character limitations.
 
@@ -147,7 +151,7 @@ This viewer displays up to 32k of data due to character limitations.
 
 The Hex viewer presents content data in hex format, it will be easy to analyze them.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot15.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot15.png)
 
 This viewer displays up to 32k of data due to character limitations.
 
@@ -155,25 +159,25 @@ This viewer displays up to 32k of data due to character limitations.
 
 HttpCanary supports previews of some data types, like JSON, Forms, images, audio and so on.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot16.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot16.png)
 
 ##### 3.2.6 JSON Viewer
 
 If the data type is JSON, you can open the JSON viewer by clicking the JSON content. You can operate JSON nodes, expand or collapse all nodes. It also supports horizontal screen.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot17.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot17.png)
 
 ##### 3.2.7 Audio Viewer
 
 If the data type is an audio, you can click to open the audio viewer. The audio viewer supports audio playback and saving.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot18.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot18.png)
 
 ##### 3.2.8 WebSocket Viewer
 
 The WebSocket viewer presents the packets in the form of a chat.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot19.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot19.png)
 
 #### 3.3 Packet Save
 
@@ -191,7 +195,7 @@ Injection is one of the core functions of HttpCanary. You can modify the request
 
 HttpCanary provides two different modes for the injection. They are static mode and dynamic mode. You can long press on the record to choose an injection mode.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot20.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot20.png)
 
 ### 1. Static Mode
 
@@ -202,7 +206,7 @@ If you configured a static mode injection, the injector will be stored for next 
 
 #### 1.1 Request Injection
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot21.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot21.png)
 
 Static mode provides an injection edit page to preprocess data. You can choose to inject the query parameters, request headers or the request body.
 
@@ -216,18 +220,18 @@ For the body injection, see the following response injection.
 
 #### 1.2 Response Injection
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot22.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot22.png)
 
 Static mode supports injecting response status line, headers and body. The following figure is an injection of the status line, you can select one from the list:
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot23.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot23.png)
 
 For the body injection, static mode provides two ways.
 
 - Upload a body file, tap the upload icon and select a file from File Browser.
 - Edit online, it supports only when the body data is human readable.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot24.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot24.png)
 
 ### 2. Dynamic Mode
 
@@ -235,13 +239,13 @@ Compare to static mode, the dynamic mode doesn't support the injection of reques
 
 You can use the dynamic mode when the capture service is running. And remember that you should handle the data before timeout.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot25.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot25.png)
 
 ### 3. Injection Results
 
 If a request is injected, the record item will show an indicated text.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot26.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot26.png)
 
 ## Repeat and Compose
 
@@ -251,19 +255,19 @@ From v2.2.0, HttpCanary supports repeat and compose requests.
 
 You can long press the record item and choose the function.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot27.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot27.png)
 
 ### 1. Repeat
 
 You can choose an item and repeat to send it. The repeated request is from HttpCanary app, and can be injected by you injectors. So if you want to inject a request, the repeat function would be very helpful.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot28.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot28.png)
 
 ### 2. Compose
 
 Compose is an advanced repeat feature. You can edit the existing request data and then repeat it.
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/en-US/assets/screenshot29.png)
+![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot29.png)
 
 There are two menu items on ActionBar. The left one is revert, use this to revert your changes. And the right one is submit.
 
