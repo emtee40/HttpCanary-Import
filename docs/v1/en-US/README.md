@@ -30,7 +30,7 @@ HttpCanary uses Man-in-the-Middle (MITM) technology to capture and parse TLS/SSL
 ![](https://github.com/MegatronKing/HttpCanary/blob/master/docs/v1/en-US/assets/screenshot02.png)
 
 ### 2. Android 7.0+（Optional）
-This is an **optional** step for some special cases of the Nougat(7.0)+ system. From Android Nougat(7.0), Google changed the network security policy. Self-signed Certificate Authorities (CA) are not trusted by any apps' secure connections by default. That means HttpCanary is unable to decrypt TLS/SSL packets. But we have two ways to get around it.
+This is an **optional** step for some special cases of the Nougat(7.0)+ system. From Android Nougat(7.0), Google changed the network security policy. Self-signed Certificate Authorities (CA) are not trusted by any apps' secure connections by default. That means HttpCanary is unable to decrypt TLS/SSL packets. But we have four ways to get around it.
 
 #### 2.1 Your own app
 Add a network security configuration in AndroidManifest.xml:
@@ -72,6 +72,13 @@ Open Parallel Space App and install the target app which you want to capture. La
 #### 2.3 Install a lower targetVersionSDK version of the target app
 
 If the app's targetVersionSDK < 24, HttpCanary can capture SSL/TLS packets even runs on Android 7.0+. 
+
+#### 2.4 Add HttpCanary root certificate to system trusted list(Root required)
+
+HttpCanary root certificate is a self-signed certificate, but if we could make this certificate to be a real CA, system will trust the MITM server. Try like the following steps to be a real CA.
+- Goto HttpCanary Settings -> HttpCanary root certificate -> Export HttpCanary root certificate -> System Trusted(.0)
+- Remount system and copy the expored .0 file to /etc/security/cacerts/
+- Restart the target app's process.
 
 ## Running HttpCanary
 
