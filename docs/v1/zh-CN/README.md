@@ -79,7 +79,7 @@ network_security_config文件放在 **res/xml/** 目录下面：
 
 如果将HttpCanary根证书导入系统信任证书目录，HttpCanary就变为了权威的CA证书，就不会存在信任风险。导入步骤如下：
 - 进入HttpCanary设置 -> HttpCanary根证书管理 -> 导出HttpCanary根证书 -> System Trusted(.0)。
-- Remount，将导出的.0格式证书导入到/ect/security/cacerts目录。
+- Remount，将导出的.0格式证书导入到/etc/security/cacerts目录。
 - 重启HttpCanary和被抓包应用进程。
 
 ## 开始抓包
