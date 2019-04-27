@@ -25,6 +25,7 @@ HttpCanary是Android平台下功能最强大的抓包和注入工具，支持HTT
 ## 功能详解
 - [静态注入器使用指南](https://juejin.im/post/5c795b6d51882523f026826b)
 - [插件使用指南](https://juejin.im/post/5c965958e51d452bcb0d9835)
+- [HTTPS抓包常见问题及解决方案](https://juejin.im/post/5cc313755188252d6f11b463)
 
 ## 配置环境
 
