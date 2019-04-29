@@ -1,1 +1,7 @@
-{"min":"2.4.0", "latest":"2.6.0", "url":"https://github.com/MegatronKing/HttpCanary/raw/master/assets/httpcanary_basic_v2.6.0.apk", "en_notes":"• Fix crashes on Android Q.\n• Redesign the MOD and rename to 'plugin'.\n• Add search labels, you can create and save options as a custom label.\n• Add status code to search option.\n• Add cookie to search option.\n• Add a plugin used for request statistics.\n• Add a plugin used for blocking some mime-types.\n• Fix a bug where the charsets are not applied to bodies.\n• Fix a bug where the static injection not works.\n• Minor bug fixes and improvements.", "zh_notes":"• 修复Android Q闪退的bug。\n• 重新设计模组功能，并重命名为’插件‘。\n• 新增搜索标签功能，你可以创建保存自定义标签。\n• 新增状态码搜索项。\n• 新增Cookie搜索项。\n• 新增数据统计插件。\n• 新增mime-types屏蔽插件。\n• 新增微信定位修改插件。\n• 修复抓包数据未能正确应用Charset导致显示乱码的问题。\n• 修复HostBlock插件不能屏蔽带有端口号的host。\n• 修复不能关联到hcy格式文件导致不能使用HttpCanary直接打开的问题。\n• 修复静态注入器不能正确提示禁用Content-Encoding和Transfer-Encoding，以及自动添加Content-Length的bug。\n• 其它细节问题修复和优化。"}
+{
+"min": "2.4.0",
+"latest": "2.8.1",
+"url": "",
+"en_notes": "• Dynamic injection supports request body and response body.\n • Add advanced repeat feature.\n • Support Firefox CA certificate configuration.\n • Fixed battery consumption issues.\n • Fixed an issue where the name of .0 CA file is incorrect.\n • Minor bug fixes and improvements.",
+"zh_notes": "• [新增] 动态注入支持修改请求体和响应体。\n • [新增] 重发支持延迟重发和批量重发功能。\n • [新增] 支持Firefox浏览器导入证书。\n • 修复导出的.0证书名称错误的bug。\n • 修复抓包耗电的问题。\n • 修复其它bug和性能问题。"
+}
