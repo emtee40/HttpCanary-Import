@@ -1,1 +1,7 @@
-{"min":"2.4.0", "latest":"2.6.1", "url":"https://github.com/MegatronKing/HttpCanary/raw/master/assets/httpcanary_basic_v2.6.1.apk", "en_notes":"• Support video preview.\n• Add time options for history.\n• Optimize app search.\n• Minor bug fixes and improvements.\n", "zh_notes":"• 新增视频预览和播放功能。\n• 新增历史记录保存时长选项。\n• 修复设置APP白名单时列表卡顿的问题。\n• 支持webp动图显示。\n• 其它bug修复和优化。"}
+{
+"min": "2.7.0",
+"latest": "2.8.1",
+"url": "https://github.com/MegatronKing/HttpCanary/raw/master/assets/httpcanary_basic_v2.8.1.apk",
+"en_notes": "• Dynamic injection supports request body and response body.\n • Add advanced repeat feature.\n • Support Firefox CA certificate configuration.\n • Fixed battery consumption issues.\n • Fixed an issue where the name of .0 CA file is incorrect.\n • Minor bug fixes and improvements.",
+"zh_notes": "• [新增] 动态注入支持修改请求体和响应体。\n • [新增] 重发支持延迟重发和批量重发功能。\n • [新增] 激活码激活时支持自动解绑旧设备。\n • [新增] 支持Firefox浏览器导入证书。\n • 修复导出的.0证书名称错误的bug。\n • 修复抓包耗电的问题。\n • 修复其它bug和性能问题。"
+}
