@@ -35,9 +35,9 @@ HttpCanary是Android平台下功能最强大的抓包和注入工具，支持HTT
 ### 1. 安装证书
 HttpCanary使用Man-in-the-Middle(MITM)技术抓取和解析TLS/SSL协议数据包，比如常见的HTTPS、WSS等请求，所以使用之前需要先安装自签根证书。当首次点击右下角蓝色抓包按钮后，再点击安装 -> 输入锁屏图案或密码 -> 确定，完成证书的安装。
 
-![](https://gitee.com/1124956/HttpCanary/blob/master/docs/v1/zh-CN/assets/screenshot01.png)
+![](assets/screenshot01.png)
 
-![](https://gitee.com/1124956/HttpCanary/blob/master/docs/v1/zh-CN/assets/screenshot02.png)
+![](./assets/screenshot02.png)
 
 ### 2. Android 7.0+手机（可选）
 从Android Nougat(7.0)开始，谷歌改变了网络安全策略。自签的CA证书将默认不被TLS/SSL连接信任，这意味着HttpCanary可能无法抓取HTTPS的明文数据。但是我们可以通过四种方式来绕过这种限制。
