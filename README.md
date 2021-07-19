@@ -6,8 +6,8 @@ HttpCanary is a powerful capture and injection tool for the Android platform. It
 
 
 - [Downloads](https://github.com/emtee40/HttpCanary-Import/assets/httpcanary_basic_v2.8.1.apk)
-- [User Manual English](https://github.com/emtee40/HttpCanary-Import/blob/master/app_ug_en.md)
--  [User Manual Chinese](https://github.com/emtee40/HttpCanary-Import/blob/master/app_ug_zh.md)
+- [User Guide English](https://github.com/emtee40/HttpCanary-Import/blob/master/app_ug_en.md)
+-  [User Guide Chinese](https://github.com/emtee40/HttpCanary-Import/blob/master/app_ug_zh.md)
 - [NetBare](https://github.com/MegatronKing/NetBare)
 
 # Screenshot
