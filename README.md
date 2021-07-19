@@ -12,4 +12,13 @@ HttpCanary is a powerful capture and injection tool for the Android platform. It
 
 # Screenshot
 
-![](https://github.com/MegatronKing/HttpCanary/blob/master/assets/main_screenshot.png)
+
+![](https://github.com/emtee40/HttpCanary-Import/blob/master/assets/main_screenshot.png)
+
+![](https://github.com/emtee40/HttpCanary-Import/blob/master/assets/screenshot_en_01.png)
+
+![](https://github.com/emtee40/HttpCanary-Import/blob/master/assets/screenshot_en_02.png)
+
+![](https://github.com/emtee40/HttpCanary-Import/blob/master/assets/screenshot_en_03.png)
+
+![](https://github.com/emtee40/HttpCanary-Import/blob/master/assets/screenshot_en_01.png)
