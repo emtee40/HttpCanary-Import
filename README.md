@@ -1,6 +1,6 @@
 # Welcome to HttpCanary
 
-HttpCanary is a powerful capture and injection tool for the Android platform. It supports multiple protocols such as HTTP, HTTP2, HTTPS and WebSocket.
+HttpCanary is a powerful capture and injection tool for the Android platform. It supports multiple protocols such as HTTP, HTTP2, HTTPS and WEBSOCKET. This is a clone from Gitee.
 
 # Getting Started
 
